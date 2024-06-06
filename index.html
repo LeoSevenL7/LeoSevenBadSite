@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leo Seven</title>
+    <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="responsive.css">
+
+</head>
+<body>
+    <header>
+	 <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <nav>
+            <ul>
+                <li><a href="#" onclick="showSection('presentation')">Présentation</a></li>
+                <li><a href="#" onclick="showSection('experiences')">Expériences</a></li>
+                <li><a href="#" onclick="showSection('influences')">Influences</a></li>
+                <li><a href="#" onclick="showSection('oeuvres')">Œuvres</a></li>
+                <li><a href="#" onclick="showSection('reseaux')">Réseaux</a></li>
+            </ul>
+        </nav>
+    </header>
+        <section id="photo">
+            <img src="photo.jpg" alt="Leo Seven">
+        </section>	
+
+    <main>
+        
+<section id="presentation">
+    <h1>Qui es-tu ?</h1>
+    <p>Je me présente sous le pseudonyme de Leo Seven. J'ai <span id="age"></span> ans et je suis passionné d'écriture depuis ma tendre enfance. Vous trouvez ça cliché ? Eh bien ça l'est et pourtant ce n'est que la vérité.</p>
+
+    <h1>Que représente l'écriture pour toi ?</h1>
+    <p>L'écriture fais partie intégrante de ma vie depuis que mon esprit s'est décidé à apprendre à réfléchir, écrire et cogiter. Enfant, il m'arrivait de m'enfermer dans ma bulle de la créativité, où je ne voulais absolument voir personne, just me, myself and I. Et dans ces moments là, j'écrivais une suite fictive d'une œuvre déjà existante ou j'écrivais ma propre histoire. Même si, on ne va pas se mentir, à cet âge là, ça ne payait pas de mines, mais il faut un début à tout. J'ai poursuivi cette passion jusqu'au jour où je me suis dis "Tiens, et si tu écrivais carrément un livre entier ?". C'est donc sur mon bureau chez mes parents, la nuit en règne, n'ayant que pour seule source de lumière mon écran d'ordinateur et une lampe de bureau aux teintes chaudes (je sais c'est encore plus cliché mais c'est d'autant plus vrai), que j'écrivais mes premières lignes qui allaient donné naissance à mon premier livre "sérieux", baptisé Hells' Hearts : au cœur de l'enfer. Les bruits des frappes de touches excessifs n'avaient aucunement réveillé ma petite amie, désormais ma femme et étant ma première lectrice, qui dormait à poings fermés juste devant moi. Mais à vrai dire, j'avais déjà griffonné sur un document Word un début d'histoire qui, aujourd'hui, porte le nom de "L'aile de fer".</p>
+    <p>L'écriture, pour moi, est un moyen de m'exprimer, de m'évader et de pouvoir discuter avec d'autres personnes à travers les dialogues de mes personnages, que je considère, quasiment, comme mes enfants (c'est une façon de voir les choses, je vous l'accorde). Mon esprit est un océan d'idées souvent agité par des vents de réflexion déstabilisant. Ecrire est aussi un moyen pour moi de soulager mon esprit et de pouvoir être moi surmené.</p>
+
+    <h1>As-tu d'autres centres d'intérêts ?</h1>
+    <p>Au delà de la plume, je m'attèle également à la musique. Je pratique le chant, la guitare, la basse, le piano, la composition musicale par ordinateur, le mixage, le mastering etc etc, on ne va pas en faire tout un plat. Passionné de musiques en tout genre, je suis d'abord fervent de Hard-Rock. Ayant joué dans plusieurs compositions musicales, j'aime à croire que ce qui me va le mieux, c'est la composition elle-même, l'étape où la musique naît.</p>
+    <p>Je fais également quelques dessins sur tablette graphique, moins maintenant, faute de temps et de priorité. Et pour terminer cette partie, je suis également fan de cinéma et d'informatique.</p>
+
+    <h1>Un mot pour la fin ?</h1>
+    <p>Eh bien ... bonne visite, et mangez des pâtes !</p>
+</section>
+
+        
+<section id="experiences" style="display: none;">
+    <h1>Ton métier ce n'est pas écrivain ?</h1>
+    <p>Bien sûr que non, enfin. Je peux vous présenter les études et divers corps de métier que j'ai traversés dans ma vie jusqu'à aujourd'hui. Commençons par les études :</p>
+    <ul>
+        <li>BAC Technologique, que j'ai obtenu</li>
+        <li>BTS en vente, que j'ai ... ouais</li>
+        <li>Diverses formations inutiles, j'en dirai pas plus c'est déjà largement suffisant</li>
+        <li>License en développement web (HTML/CSS/JS/PHP/SQL)</li>
+        <li>Doctorat en rien</li>
+    </ul>
+
+    <p>Voici maintenant mes expériences professionnelles, pareil, toujours dans les grandes lignes :</p>
+    <ul>
+        <li>Stage en infirmerie, clairement pas pour moi</li>
+        <li>Petits jobs d'été en tant qu'ouvrier de la municipalité mais aussi animateur de centre aéré, c'est durant cette dernière expérience que j'ai su que je ne travaillerai plus avec les jeunes</li>
+        <li>Facturation en boîte de transport (je ne me souviens plus du nom de poste et ça m'est égal), je l'ai fait durant moins d'un an et j'ai dû à contrecoeur arrêter pour des raisons personnelles ... nan, j'ai été viré comme un malpropre, et c'était mieux ainsi</li>
+        <li>Animateur numérique, ce que je suis actuellement, je donne des cours informatique, tablette et smartphone à, en général, des personnes âgées. Vive les vieux !</li>
+    </ul>
+
+    <p>PS : ah si j'ai fait un jour d'usine aussi, ça a fini en Prison Break à la fin, bref, longue histoire.</p>
+</section>
+
+
+
+<section id="influences" style="display: none;">
+    <h1>Que lis-tu ?</h1>
+    <p>Au risque de vous étonner, pas grand chose. Au fil de ma vie, j'ai lu plusieurs œuvres littéraires plus ou moins captivantes. La première m'ayant marqué était "La Ferme des Animaux" de Georges Orwell. Mais aussi, "Le Chien Jaune" de Simenon, "Le Dernier Jour d'un Condamné" de Victor Hugo, "1984" de Georges Orwell, "La Métamorphose" de Kafka ou même, ne riez pas, "Les 120 Journées de Sodome" du Marquis de Sade.</p>
+    <p>J'ai aussi lu quelques comics/mangas tels que "Dragon Ball" et "Dragon Ball Z" d'Akira Toriyama (paix à ton âme), mais également toute la série "The Walking Dead" par Robert Kirkman.</p>
+
+    <h1>As-tu d'autres influences ?</h1>
+    <p>Oui, bien entendu. Niveau musical, je suis influencé par Placebo, Depeche Mode, Nirvana, The Doors, The Pretty Reckless, Iron Maiden, Metallica ou même Hooverphonic. Ma chanson préférée étant "All is full of love" de Björk, une perfection. Sinon, pour en revenir au sujet, je suis assez influencé visuellement par le cinéma et la télévision.</p>
+
+    <h1>Niveau film et séries, ça donne quoi ?</h1>
+    <p>Alors, je suis passionné de films d'horreur, dramatiques ou de suspense. La saga des films "Saw", "Scream", "Vendredi 13", "Halloween", "Destination Finale", tout ça c'est ma came. Je suis aussi fan d'autres films comme "Fight Club", "Pulp Fiction", "Predator" et j'en passe, mais également de la saga "Star Wars", mais ça c'est normal, non ?</p>
+    <p>Ensuite, les séries qui m'ont marqué et influencé sont d'abord "Breaking Bad/Better Call Saul", "Scream" (again), "The Walking Dead", "The Mandalorian", "You", "Elite" (oui, "Elite"), "Sex Education" (on part en couilles), "La Casa de Papel", "Vikings" ou encore "Squid Game".</p>
+
+    <h1>Tu ne rigoles donc jamais ?</h1>
+    <p>Bien sûr que si, je suis même le premier à rire. Pour me divertir, je regarde les classiques du cinéma français tels que "Le Gendarme", "Le Dîner de Cons" ou autres. Mais pour me détendre, je préfère me poser devant des séries telles que "How I Met Your Mother", "Malcolm", "Brooklyn 99" ou encore même "The Big Bang Theory".</p>
+</section>
+
+
+
+
+
+<section id="oeuvres" style="display: none;">
+    <h1>Oeuvres</h1>
+
+    <div class="oeuvre">
+        <h2><img src="book_logo.png" style="width: 30px;"> La quête d'Icare, le grand jeu (30/08/2022)</h2>
+        <img src="covers/icarus1.png" alt="Couverture du livre">
+        <p><strong>Style :</strong> Horreur et Drame - 193 pages / 27997 mots</p>
+        <p>Une mystérieuse invitation à participer à un jeu sur le thème « Icare » apparaît sur un compte Instagram de faible réputation. Celle-ci promet une récompense de 1,5 million de dollars. Le problème est le manque d’information sur la réelle quête à réaliser.
+        Les plus téméraires auront l’honneur de trouver le lieu de rendez-vous pour participer à la fameuse quête d’Icare. Grand jeu organisé par un certain « Zéro », les participants sont loin d’imaginer à quel genre de jeu ils s'apprêtent à jouer et n’oublieront jamais cette aventure, pour ceux qui auront la chance de rester en vie jusqu’à la fin de cette quête sordide.</p>
+        <p><strong>Statut : </strong>Terminé</p>
+        <p><strong>Place dans la saga : </strong>1/3</p>
+    </div>
+
+
+
+    <div class="oeuvre">
+        <h2><img src="book_logo.png" style="width: 30px;"> Les ailes de la mort (04/06/2024)</h2>
+        <img src="covers/unknown.png" alt="Couverture du livre">
+        <p><strong>Style :</strong> Horreur et Drame - 193 pages / 27997 mots</p>
+        <p>Ce livre est la suite directe de "La quête d'Icare, le grand jeu". Pour éviter le spoil, aucun résumé ne sera affiché.</p>
+        <p><strong>Statut : </strong>En cours</p>
+        <p><strong>Place dans la saga : </strong>2/3</p>
+    </div>
+
+
+    <div class="oeuvre">
+        <h2><img src="book_logo.png" style="width: 30px;"> Le dernier naufrage (Date inconnue)</h2>
+        <img src="covers/unknown.png" alt="Couverture du livre">
+        <p><strong>Style :</strong> Horreur et Drame - 193 pages / 27997 mots</p>
+        <p>Ce livre est la suite directe de "Les ailes de la mort". Pour éviter le spoil, aucun résumé ne sera affiché.</p>
+        <p><strong>Statut : </strong>En projet</p>
+        <p><strong>Place dans la saga : </strong>3/3</p>
+    </div>
+
+
+</section>
+
+
+
+<section id="reseaux" style="display: none;">
+    <h1>Réseaux</h1>
+    <p>Je suis sur les réseaux suivants, où je partage des choses sur mes dernières réalisations et où je dis un peu ce qui me passe par la tête.</p>
+
+    <p><strong>Instagram</strong> <br>
+    l_leo_seven_7 <br>
+    <a href="https://www.instagram.com/l_leo_seven_7/" target="_blank">https://www.instagram.com/l_leo_seven_7/</a></p>
+
+    <p><strong>Facebook</strong> <br>
+    Pas encore <br>
+    <a href="https://www.pasencoredepagefbmaisbientotjepense.com/jepense/" target="_blank">https://www.pasencoredepagefbmaisbientotjepense.com/jepense/</a></p>
+
+    <p><strong>YouTube</strong>  <br>
+    Leo Seven - @leoseven9816 <br>
+    <a href="https://youtube.com" target="_blank">https://youtube.com</a></p>
+
+    <p><strong>Gmail</strong> <br>
+    leosevendrawing@gmail.com <br>
+    <a href="mailto:leosevendrawing@gmail.com">Envoyer un email</a></p>
+</section>
+
+
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

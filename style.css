@@ -1,0 +1,244 @@
+/* Style général */
+* {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: rgba(13, 13, 13, 0.82);
+    overflow-x: hidden;
+    background-image: url("background.jpg"); /* Remplacez "chemin/vers/votre/photo.jpg" par le chemin de votre image */
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+body::after {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Couche noire semi-transparente par-dessus l'image de fond */
+    z-index: -1; /* Assure que cette couche est derrière le contenu */
+}
+
+header {
+    background: #000000;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: space-around; /* Répartit les éléments de la navigation sur toute la largeur */
+    width: 100%; /* Assure que la navigation prend toute la largeur */
+}
+
+header nav ul li {
+    flex-grow: 1; /* Permet aux éléments de la liste de s'étendre également */
+    text-align: center; /* Centre le texte dans chaque élément de la liste */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.5rem; /* Augmente la taille de la police */
+    transition: color 0.3s ease, background 0.3s ease;
+    padding: 0.5rem 1rem;
+    display: block; /* Permet au lien de prendre toute la largeur de l'élément de la liste */
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+
+main {
+    padding: 2rem;
+    min-height: 80vh;
+}
+
+section {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(22, 22, 22, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.5s ease;
+    margin: 0 auto 2rem; /* Espacement entre les sections */
+}
+
+#photo {
+    margin-bottom: 1rem; /* Espacement en bas */
+    text-align: center; /* Centrage du contenu */
+	background : none;
+	box-shadow:none;
+}
+
+#photo img {
+    max-width: 300px; /* Définissez la largeur maximale de la photo */
+    width: 100%; /* Assurez-vous que la photo s'adapte à la largeur maximale */
+    border-radius: 10px; /* Ajoute un arrondi aux coins */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Ajoute une ombre douce */
+	transition: transform 0.3s ease, filter 0.3s ease; /* Ajoute des transitions pour l'effet de brillance */
+}
+/* Effet de brillance au survol */
+#photo:hover img {
+    filter: brightness(1.2); /* Ajoute un effet de brillance en augmentant la luminosité */
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+#presentation p {
+    text-align: justify;
+}
+
+.menu-icon {
+    display: none;
+    cursor: pointer;
+    padding: 10px;
+    position: fixed;
+    top: 20px; /* Ajustez la position verticale selon vos besoins */
+    right: 20px; /* Ajustez la position horizontale selon vos besoins */
+    z-index: 9999; /* Assurez-vous que le bouton reste au-dessus du contenu */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 1rem;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2rem;
+    transition: color 0.3s ease, background 0.3s ease;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+}
+
+header nav ul li a:hover {
+    color: white;
+    background: rgba(255, 255, 255, 0.1);
+}
+
+@media screen and (max-width: 768px) {
+    header nav ul {
+        display: none;
+    }
+
+    nav.open {
+        display: block;
+        background-color: #000; /* Changer la couleur de fond à noir */
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    main {
+        padding-top: 50px;
+    }
+}
+
+#experiences {
+    max-width: 800px;
+    width: 100%;
+    background: rgba(22, 22, 22, 0.9);
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    transition: opacity 0.5s ease;
+    margin-top: 20px; /* Ajoute une marge en haut pour séparer de la section précédente */
+}
+
+#experiences h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#experiences p,
+#experiences ul {
+    font-size: 1.1rem; /* Ajuste la taille de police */
+    line-height: 1.6;
+}
+
+#experiences ul {
+    padding-left: 20px; /* Ajoute un peu de marge à gauche pour la liste */
+}
+
+#experiences ul li {
+    margin-bottom: 0.5rem; /* Espacement entre les éléments de la liste */
+}
+
+.active {
+    background: rgba(22, 22, 22, 0.9);
+}
+
+
+/* Style pour les réseaux sociaux */
+#reseaux p:nth-of-type(2) strong {
+    color: #ff724f; /* Rose orangé pastel pour Instagram */
+}
+
+#reseaux p:nth-of-type(3) strong {
+    color: #60a0ff; /* Bleu pastel pour Facebook */
+}
+
+#reseaux p:nth-of-type(4) strong {
+    color: #ff5454; /* Rouge pastel pour YouTube */
+}
+
+#reseaux p:nth-of-type(5) strong {
+    color: white; /* Blanc pour Gmail */
+}
+
+#oeuvres {
+    display: none;
+}
+
+.oeuvre {
+    margin-bottom: 2rem; /* Espacement entre chaque œuvre */
+}
+
+.oeuvre h2 {
+    display: flex; /* Utilisation de flexbox pour aligner les éléments */
+    align-items: center; /* Alignement vertical des éléments */
+}
+
+.oeuvre h2 img {
+    margin-right: 1rem; /* Espacement entre l'icône du livre et le texte */
+}
+
+.oeuvre img {
+    max-width: 240px; /* Définissez la largeur maximale de l'image de la couverture du livre */
+    width: 100%; /* Assurez-vous que l'image s'adapte à la largeur maximale */
+    margin-top: 1rem; /* Espacement entre le titre et l'image de la couverture */
+}
+
+
